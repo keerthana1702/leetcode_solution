@@ -1,0 +1,17 @@
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        d = set()
+        for i in nums:
+            if i in d:
+                return i
+            else:
+                d.add(i)
+
+#if u wanna run this in an ide
+# input_str = input()
+# arr = input_str.strip('[]').split(',')
+# arr = [int(num) for num in arr]
+# solution = Solution()
+# duplicate = solution.findDuplicate(arr)
+# print(duplicate)
+                
